@@ -14,7 +14,7 @@ jobs:
 
       - name: Restart Docker
         run: |
-          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S /usr/local/bin/docker-restart.sh
+          echo "${{ secrets.DB_PASS }}" | sudo -S /usr/local/bin/docker-restart.sh
 
 
       - name: Login no Github Container Registry
