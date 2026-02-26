@@ -26,11 +26,11 @@ jobs:
 
       - name: Build da Imagem
         run: |
-          docker build -t ghcr.io/o-orion/turma01:latest .
+          docker build -t ghcr.io/lptleo/turma01:latest .
 
       - name: Push Imagem
         run: |
-          docker push ghcr.io/o-orion/turma01:latest
+          docker push ghcr.io/lptleo/turma01:latest
 
       - name: Cria o .env na VM
         run: |
